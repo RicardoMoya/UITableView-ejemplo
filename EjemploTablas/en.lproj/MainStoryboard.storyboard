@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="11G63b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="3ib-oG-2JP">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+    </dependencies>
+    <scenes>
+        <!--Mgr View Controller - Pajaros-->
+        <scene sceneID="5">
+            <objects>
+                <viewController id="2" customClass="mgrViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="57" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="4OC-4F-1xW">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="celdaPajaros" rowHeight="70" id="5uc-jx-BBP">
+                                        <rect key="frame" x="0.0" y="22" width="320" height="70"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="300" height="69"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" tag="12" contentMode="scaleToFill" image="im_buho.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Iut-3G-qwh">
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="60" id="2wH-Di-O7X"/>
+                                                        <constraint firstAttribute="width" constant="70" id="vMl-e2-qPR"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="10" contentMode="left" text="Titulo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lAH-87-Zs5">
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="35" id="Cne-yL-Joq"/>
+                                                        <constraint firstAttribute="width" constant="200" id="xfu-pY-Fes"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="20"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="11" contentMode="left" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o4P-1F-V8e">
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="25" id="Ufw-fl-ryd"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <color key="textColor" red="0.29803922772407532" green="0.29803922772407532" blue="0.29803922772407532" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="lAH-87-Zs5" firstAttribute="leading" secondItem="5uc-jx-BBP" secondAttribute="leading" constant="80" id="FYp-WT-feI"/>
+                                            <constraint firstItem="o4P-1F-V8e" firstAttribute="leading" secondItem="lAH-87-Zs5" secondAttribute="leading" type="default" id="JC0-mR-Bx6"/>
+                                            <constraint firstItem="Iut-3G-qwh" firstAttribute="top" secondItem="5uc-jx-BBP" secondAttribute="top" constant="4" id="Ox7-Ez-Cg3"/>
+                                            <constraint firstItem="lAH-87-Zs5" firstAttribute="top" secondItem="Iut-3G-qwh" secondAttribute="top" type="default" id="iGM-AJ-BVv"/>
+                                            <constraint firstItem="Iut-3G-qwh" firstAttribute="leading" secondItem="5uc-jx-BBP" secondAttribute="leading" constant="4" id="rKS-x8-qcO"/>
+                                            <constraint firstAttribute="bottom" secondItem="o4P-1F-V8e" secondAttribute="bottom" constant="5" id="vRB-zg-ndm"/>
+                                            <constraint firstItem="o4P-1F-V8e" firstAttribute="trailing" secondItem="lAH-87-Zs5" secondAttribute="trailing" type="default" id="xcl-tS-qHN"/>
+                                        </constraints>
+                                        <connections>
+                                            <segue destination="BUY-kk-f2t" kind="push" identifier="pasarDatos" id="4B4-XQ-YzW"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <sections/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="4OC-4F-1xW" firstAttribute="bottom" secondItem="3" secondAttribute="bottom" type="default" id="J7H-2J-r6L"/>
+                            <constraint firstItem="4OC-4F-1xW" firstAttribute="top" secondItem="3" secondAttribute="top" type="default" id="KbA-Qg-bv5"/>
+                            <constraint firstItem="4OC-4F-1xW" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="Szb-rU-RnX"/>
+                            <constraint firstItem="4OC-4F-1xW" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="Tqh-IH-vuK"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Pajaros" id="rlx-0o-wen"/>
+                    <connections>
+                        <outlet property="miTabla" destination="4OC-4F-1xW" id="35i-OK-tWZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="673" y="47"/>
+        </scene>
+        <!--Vista2 - Tipo Pajaro-->
+        <scene sceneID="7U9-Eo-jZL">
+            <objects>
+                <viewController id="BUY-kk-f2t" customClass="Vista2" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="21l-8U-luG">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Texto" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Bke-jq-Yfe">
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Bke-jq-Yfe" firstAttribute="bottom" secondItem="21l-8U-luG" secondAttribute="bottom" type="default" id="Beg-BR-Kdg"/>
+                            <constraint firstItem="Bke-jq-Yfe" firstAttribute="trailing" secondItem="21l-8U-luG" secondAttribute="trailing" type="default" id="Ud5-Nu-t7s"/>
+                            <constraint firstItem="Bke-jq-Yfe" firstAttribute="top" secondItem="21l-8U-luG" secondAttribute="top" type="default" id="hoE-oy-nYs"/>
+                            <constraint firstItem="Bke-jq-Yfe" firstAttribute="leading" secondItem="21l-8U-luG" secondAttribute="leading" type="default" id="ioY-t6-Qcd"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Tipo Pajaro" id="n8T-8q-ghN">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="Ed9-Di-TqT"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="contenedorTexto" destination="Bke-jq-Yfe" id="NeD-UM-9s4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0cO-dh-ob8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1096" y="47"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="8PV-0e-i0E">
+            <objects>
+                <navigationController id="3ib-oG-2JP" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="PbN-bP-wY1">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="2" kind="relationship" relationship="rootViewController" id="WcX-JZ-yGh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wIu-K8-NqW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="219" y="47"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="im_buho.jpg" width="800" height="533"/>
+    </resources>
+    <classes>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="Vista2" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/Vista2.h"/>
+            <relationships>
+                <relationship kind="outlet" name="contenedorTexto" candidateClass="UITextView"/>
+            </relationships>
+        </class>
+        <class className="mgrViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/mgrViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="miTabla" candidateClass="UITableView"/>
+            </relationships>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>
